@@ -1,0 +1,29 @@
+.person {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.person p {
+  margin: 0;
+}
+
+.name {
+  font-size: large;
+}
+
+.age {
+  font-size: 12px;
+}
+
+.person div {
+  padding: 8px;
+}

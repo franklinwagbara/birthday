@@ -1,0 +1,16 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  background-color: #ffffff;
+  max-width: 500px;
+  padding: 30px 30px;
+  border-radius: 10px;
+  box-shadow: 45px 45px 30px #e06e9c;
+}
+
+div button {
+  min-width: 300px;
+  min-height: 50px;
+  border-radius: 5px;
+}
