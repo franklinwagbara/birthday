@@ -13,4 +13,14 @@ div button {
   min-width: 300px;
   min-height: 50px;
   border-radius: 5px;
+  background-color: #f074be;
+  border-style: none;
+  color: white;
+  margin-top: 35px;
+  outline: none !important;
+}
+
+button:hover {
+  background-color: #f144ac;
+  cursor: pointer;
 }

@@ -9,6 +9,13 @@ class List extends Component {
     data: data,
   };
 
+  handleClick = () => {
+    const total = 0;
+    const data = null;
+
+    this.setState({ total, data });
+  };
+
   formatedHeader() {
     const { total } = this.state;
     if (total <= 1) return `${total} birthday today`;
@@ -18,16 +25,17 @@ class List extends Component {
     const { data } = this.state;
     return (
       <div className="list-container">
-        <h3>{this.formatedHeader()}</h3>
-        {data.map((person) => (
-          <Person
-            key={person.id}
-            image={person.image}
-            name={person.name}
-            age={person.age}
-          />
-        ))}
-        <button>View all</button>
+        <h4>{this.formatedHeader()}</h4>
+        {data &&
+          data.map((person) => (
+            <Person
+              key={person.id}
+              image={person.image}
+              name={person.name}
+              age={person.age}
+            />
+          ))}
+        <button onClick={this.handleClick}>Clear all</button>
       </div>
     );
   }
